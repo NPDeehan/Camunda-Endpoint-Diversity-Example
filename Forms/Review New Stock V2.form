@@ -1,0 +1,70 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.3.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "c2ec34f"
+  },
+  "schemaVersion": 15,
+  "id": "Form_9zwdl93",
+  "components": [
+    {
+      "text": "# Information on new stock",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1ee04a9",
+        "columns": null
+      },
+      "id": "Field_1uo9e5a"
+    },
+    {
+      "text": "### Your new stock is {{name}}",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_0jz8whn",
+        "columns": null
+      },
+      "id": "Field_0jbgdcx"
+    },
+    {
+      "label": "Table",
+      "type": "table",
+      "layout": {
+        "row": "Row_1srnbh4",
+        "columns": null
+      },
+      "dataSource": "=details",
+      "rowCount": 10,
+      "id": "Field_0nkkye4",
+      "columns": [
+        {
+          "label": "Update",
+          "key": "update"
+        },
+        {
+          "label": "Status",
+          "key": "status"
+        },
+        {
+          "label": "Value",
+          "key": "value"
+        }
+      ]
+    },
+    {
+      "label": "Keep Listening for updates",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0eiz9cy",
+        "columns": null
+      },
+      "id": "Field_042rvk0",
+      "key": "waitForUpdate",
+      "description": "Tick this box if you want constant push updates",
+      "defaultValue": true
+    }
+  ],
+  "type": "default"
+}

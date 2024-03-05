@@ -1,0 +1,58 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.3.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "c2ec34f"
+  },
+  "schemaVersion": 15,
+  "id": "finalDetailsCheck",
+  "components": [
+    {
+      "text": "# Details for {{name}}",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1ee04a9",
+        "columns": null
+      },
+      "id": "Field_1uo9e5a"
+    },
+    {
+      "label": "Table",
+      "type": "table",
+      "layout": {
+        "row": "Row_18ebrab",
+        "columns": null
+      },
+      "dataSource": "=details",
+      "rowCount": 10,
+      "id": "Field_15zvrsi",
+      "columns": [
+        {
+          "label": "Status",
+          "key": "status"
+        },
+        {
+          "label": "Update",
+          "key": "update"
+        },
+        {
+          "key": "value",
+          "label": "Value"
+        }
+      ]
+    },
+    {
+      "text": "The number of updates is {{updated}}",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1s3yp9g",
+        "columns": null
+      },
+      "id": "Field_088xkuz"
+    }
+  ],
+  "type": "default"
+}

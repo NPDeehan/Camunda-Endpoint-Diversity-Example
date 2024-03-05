@@ -1,0 +1,88 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.4.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "c2ec34f"
+  },
+  "schemaVersion": 15,
+  "id": "manual-stock-tracking-1amaveg",
+  "components": [
+    {
+      "text": "# Enter Stock Details",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_09d885n",
+        "columns": null
+      },
+      "id": "Field_0tszi0w"
+    },
+    {
+      "label": "Name of Stock",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0p7zf3t",
+        "columns": null
+      },
+      "id": "Field_13oqglz",
+      "key": "name",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Current Update",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1sm1jwj",
+        "columns": null
+      },
+      "id": "Field_1k9cy0m",
+      "key": "newDetails.update",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Current Status",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1k7miy5",
+        "columns": null
+      },
+      "id": "Field_1ilftbc",
+      "key": "newDetails.status",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Number",
+      "type": "number",
+      "layout": {
+        "row": "Row_1mbabse",
+        "columns": null
+      },
+      "id": "Field_1o1y4em",
+      "key": "newDetails.value",
+      "validate": {
+        "required": true,
+        "min": 0
+      }
+    },
+    {
+      "label": "New Stock",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1yzah24",
+        "columns": null
+      },
+      "id": "Field_0c4pdk6",
+      "key": "newStock",
+      "defaultValue": true,
+      "readonly": true
+    }
+  ],
+  "type": "default"
+}
